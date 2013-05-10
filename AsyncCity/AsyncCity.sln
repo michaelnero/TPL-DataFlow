@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncCity", "AsyncCity\AsyncCity.csproj", "{9180664C-EDB6-4769-BAE7-C742CA13B141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncCity.Model", "AsyncCity.Model\AsyncCity.Model.csproj", "{55F407EA-A620-46E6-B9B1-E6D5A1BC0CF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9180664C-EDB6-4769-BAE7-C742CA13B141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9180664C-EDB6-4769-BAE7-C742CA13B141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9180664C-EDB6-4769-BAE7-C742CA13B141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9180664C-EDB6-4769-BAE7-C742CA13B141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F407EA-A620-46E6-B9B1-E6D5A1BC0CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F407EA-A620-46E6-B9B1-E6D5A1BC0CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F407EA-A620-46E6-B9B1-E6D5A1BC0CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F407EA-A620-46E6-B9B1-E6D5A1BC0CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Async City</title>
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="assets/styles/default.css" rel="stylesheet" media="screen" />
+    <link href="assets/styles/fonts.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="span4 pull-left">
+                    <h1><img src="/Assets/Images/appbar.city.seattle.png"/>Async&nbsp;<span class="city-title">City</span></h1>
+                </div>
+                <div class="span3 pull-right">
+                    <div id="toolbox">
+                        Add a city element
+                        <ul class="dropdown" data-bind="foreach: elementTypes">
+                            <li>
+                                <a href="#" data-bind="click: $root.addElement, attr: { class: type().toLowerCase() }">
+                                    <i data-bind="attr: { class: icon() + ' icon-large' }"></i>
+                                    <span data-bind="text: name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="span12" data-bind="foreach: elements">
+                    <div data-bind="click: increaseSize, event: { contextmenu: $root.removeElement }, attr: { class: cssClass }">
+                        <div class="element-icon" data-bind="foreach: icons">
+                            <i data-bind="attr: { class: $data + ' icon-large' }"></i>
+                        </div>
+                        <div class="element-state-info">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/javascripts/jquery-1.8.3.min.js"></script>
+    <script src="assets/javascripts/jquery.signalR-1.0.0-rc2.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="assets/javascripts/bootstrap.min.js"></script>
+    <script src="assets/javascripts/knockout-2.2.1.js"></script>
+    <script src="assets/javascripts/default.js"></script>
+    <script>
+        $(function () {
+            Page.init();
+        });
+    </script>
+</body>
+</html>

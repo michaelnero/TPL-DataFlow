@@ -1,0 +1,242 @@
+﻿.btn {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+header {
+    background-image: url('../images/noisy-texture.png');
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+    header h1 {
+        font-family: 'ChunkFiveRegular';
+        padding: 12px 0px;
+    }
+
+    header .icon-random {
+        font-size: 29px;
+    }
+
+    header .city-title {
+        color: rgb(224, 173, 18);
+    }
+
+#toolbox {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 21px;
+    padding: 10px 15px;
+    background: #fff;
+    border-left: 5px solid grey;
+    cursor: pointer;
+    -moz-outline: none;
+    outline: none;
+}
+
+    #toolbox ul {
+        margin-left: 0px;
+    }
+
+    #toolbox:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        margin-top: -3px;
+        border-width: 6px 6px 0 6px;
+        border-style: solid;
+        border-color: grey transparent;
+    }
+
+    #toolbox .dropdown {
+        position: absolute;
+        top: 100%;
+        left: -5px;
+        right: 0px;
+        background: white;
+        list-style: none;
+        pointer-events: none;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        -moz-opacity: 0;
+        opacity: 0;
+        display: none;
+    }
+
+        #toolbox .dropdown li {
+            z-index: 9999;
+        }
+
+        #toolbox .dropdown li a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            border-left: 5px solid;
+            padding: 10px;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            z-index: 9999;
+        }
+
+        #toolbox .dropdown li a.electricity {
+            border-left-color: #104577;
+        }
+
+        #toolbox .dropdown li a.water {
+            border-left-color: #61bade;
+        }
+
+        #toolbox .dropdown li a.house {
+            border-left-color: #5bc4bf;
+        }
+
+        #toolbox .dropdown li a.business {
+            border-left-color: #bb94b7;
+        }
+
+        #toolbox .dropdown li a.trash {
+            border-left-color: #f68d51;
+        }
+
+        #toolbox .dropdown li a.sewage {
+            border-left-color: #5bc4bf;
+        }
+
+        #toolbox .dropdown li i {
+            margin-right: 5px;
+            color: inherit;
+            vertical-align: middle;
+            z-index: 9999;
+        }
+
+        #toolbox .dropdown li:hover a {
+            color: grey;
+        }
+
+    #toolbox.active:after {
+        border-width: 0 6px 6px 6px;
+    }
+
+    #toolbox.active .dropdown {
+        -moz-opacity: 1;
+        opacity: 1;
+        display: block;
+        pointer-events: auto;
+    }
+
+div.city-element {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    margin: 26px 32px 26px 0px;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+    div.city-element.underserved-state-0 {
+        box-shadow: inset 0 0 0 8px rgba(255,255,255,0.7), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-1 {
+        box-shadow: inset 0 0 0 8px rgba(0,166,81,1), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-2 {
+        box-shadow: inset 0 0 0 8px rgba(0,166,81,0.8), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-3 {
+        box-shadow: inset 0 0 0 8px rgba(0,166,81,0.6), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-4 {
+        box-shadow: inset 0 0 0 8px rgba(0,166,81,0.4), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-5 {
+        box-shadow: inset 0 0 0 8px rgba(0,166,81,0.2), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-6 {
+        box-shadow: inset 0 0 0 8px rgba(215,25,32,0.2), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-7 {
+        box-shadow: inset 0 0 0 8px rgba(215,25,32,0.4), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-8 {
+        box-shadow: inset 0 0 0 8px rgba(215,25,32,0.6), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-9 {
+        box-shadow: inset 0 0 0 8px rgba(215,25,32,0.8), 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    div.city-element.underserved-state-10 {
+        box-shadow: inset 0 0 0 8px rgba(215,25,32,1), 0 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    div.city-element .element-icon {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        font-size: 21px;
+        margin: 0 1px;
+        padding: 39px 0 0 0;
+        height: 70px;
+        text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+        cursor: default;
+    }
+
+    div.city-element:hover .element-state-info {
+    }
+
+    div.city-element:hover .element-icon {
+    }
+
+    div.city-element.electricity {
+        background-color: #104577;
+    }
+
+    div.city-element.water {
+        background-color: #61bade;
+    }
+
+    div.city-element.house {
+        background-color: #464fa1;
+    }
+
+    div.city-element.business {
+        background-color: #bb94b7;
+    }
+
+    div.city-element.trash {
+        background-color: #f68d51;
+    }
+
+    div.city-element.sewage {
+        background-color: #5bc4bf;
+    }
